@@ -1,0 +1,227 @@
+[
+  {
+    "description": "Audit Trial",
+    "children": [
+      {
+        "description": "Queries",
+        "children": [
+          {
+            "description": "View User Activity",
+            "route": "activity"
+          },
+          {
+            "description": "View Transactions (For Audit)",
+            "route": "transaction"
+          },
+          {
+            "description": "View Operations Log",
+            "route": "operations"
+          }
+        ]
+      },
+      {
+        "description": "Reports",
+        "children": [{
+          "description": "Generate User Journal Reports",
+          "route": "journal"
+        },
+          {
+            "description": "Generate Audit Report (Raw Data Format)",
+            "route": "audit"
+          }]
+      }
+    ]
+  },
+  {
+    "description": "Business Correspondent",
+    "children": [
+      {
+        "description": "EODSOD",
+        "children": [{
+          "description": "Branch Sign In",
+          "route": "signin"
+        },
+          {
+            "description": "Branch Sign Out",
+            "route": "signout"
+          }]
+      },
+      {
+        "description": "Transactions",
+        "children": [{
+          "description": "Entries",
+          "route": "entries"
+        },
+          {
+            "description": "Queries",
+            "route": "queries"
+          }]
+      },
+      {
+        "description": "Reports",
+        "children": [{
+          "description": "Reports",
+          "route": "reports"
+        }]
+      },
+      {
+        "description": "Authorization",
+        "children": [{
+          "description": "Authorization",
+          "route": "authorisations"
+        }]
+      }
+    ]
+  },
+  {
+    "description": "Authorization",
+    "children": [{
+      "description": "Authorization",
+      "children": [{
+        "description": "Authorization Non Financial",
+        "route": "nonfinancal"
+      },
+        {
+          "description": "Configure Authorization for Banking Transaction",
+          "route": "banktranc"
+        },
+        {
+          "description": "Authorization Account Closure",
+          "route": "accclosure"
+        },
+        {
+          "description": "Authorise Cheque Activities",
+          "route": "checqueact"
+        },
+        {
+          "description": "DD/PO Authorization",
+          "route": "ddpoautho"
+        },
+        {
+          "description": "Gold Loan Authorization",
+          "route": "goldloan"
+        },
+        {
+          "description": "Security Module Authorization",
+          "route": "securitymod"
+        }]
+    },
+      {
+        "description": "Masters",
+        "children": [{
+          "description": "Configure Exception Codes",
+          "route": "configcode"
+        },
+          {
+            "description": "Configure Exception Codes Mapping",
+            "route": "configcodemap"
+          }]
+      }]
+  },
+  {
+    "description": "Cheque Book Request",
+    "children": [{
+      "description": "Masters",
+      "children": [{
+        "description": "Setup Cheque Book Types",
+        "route": "settype"
+      },
+        {
+          "description": "Setup Cheque Book Types for Products",
+          "route": "settypeprod"
+        },
+        {
+          "description": "Setup Charges Codes for Cheque Book Activity",
+          "route": "setchrgcode"
+        }]
+    },
+      {
+        "description": "Entries",
+        "children": [{
+          "description": "Request for Cheque Book",
+          "route": "request"
+        },
+          {
+            "description": "Issue Cheque Book",
+            "route": "issue"
+          },
+          {
+            "description": "Stop Cheque Instruction",
+            "route": "stoptransac"
+          },
+          {
+            "description": "Revoke Stop Cheque Instruction (Single)",
+            "route": "revokesingle"
+          },
+          {
+            "description": "Stop Cheque Instruction (Multiple)",
+            "route": "stopmulti"
+          },
+          {
+            "description": "Revoke Cheque Instruction (Multiple)",
+            "route": "revoke"
+          }]
+      },
+      {
+        "description": "Authorization",
+        "children": [{
+          "description": "Authorise Cheque Book Activities",
+          "route": "activity"
+        }]
+      },
+      {
+        "description": "Queries",
+        "children": [{
+          "description": "View Cheque Books Issued for a Customer-Period",
+          "route": "viewcustper"
+        },
+          {
+            "description": "View Stop Cheque Instruction (Single)",
+            "route": "viewstopsingle"
+          },
+          {
+            "description": "View Used Cheques",
+            "route": "viewused"
+          },
+          {
+            "description": "View Cheque Book Issued",
+            "route": "viewissued"
+          }]
+      },
+      {
+        "description": "Reports",
+        "children": [{
+          "description": "Generate Rejected Cheque Book Requests (Period)",
+          "route": "genrequest"
+        },
+          {
+            "description": "Generate Issued Cheque Books (Period)",
+            "route": "genissued"
+          },
+          {
+            "description": "Generate Pending Cheque Book Requests (Aging)",
+            "route": "genpending"
+          },
+          {
+            "description": "Generate Stop Cheque Requests (Period)",
+            "route": "genstopreq"
+          },
+          {
+            "description": "Generate Revoked Stop Cheque Requests (Period)",
+            "route": "genrevokereq"
+          },
+          {
+            "description": "Generate Cheque Book Charges Collected (Period)",
+            "route": "genchargecol"
+          },
+          {
+            "description": "Generate Used Cheques Report (Period)",
+            "route": "genusedrep"
+          },
+          {
+            "description": "Generate Cheque Book Requests (Period)",
+            "route": "genreqperiod"
+          }]
+      }]
+  }
+]
